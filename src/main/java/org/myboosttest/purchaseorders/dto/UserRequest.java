@@ -19,8 +19,7 @@ public record UserRequest(
         @NotNull(message = "Phone is required")
         String phone,
         String createdBy,
-        String updatedBy,
-        LocalDateTime createdDateTime
+        String updatedBy
 
 ) {
 }

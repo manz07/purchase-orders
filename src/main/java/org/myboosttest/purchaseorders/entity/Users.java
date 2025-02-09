@@ -20,7 +20,9 @@ public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(length = 500)
     private String firstname;
+    @Column(length = 500)
     private String lastname;
     private String email;
     private String phone;
