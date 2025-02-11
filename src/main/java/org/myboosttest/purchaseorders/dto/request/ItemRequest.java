@@ -1,4 +1,4 @@
-package org.myboosttest.purchaseorders.dto;
+package org.myboosttest.purchaseorders.dto.request;
 
 
 import jakarta.validation.constraints.NotNull;

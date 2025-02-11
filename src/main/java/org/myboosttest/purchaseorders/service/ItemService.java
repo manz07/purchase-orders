@@ -2,11 +2,12 @@ package org.myboosttest.purchaseorders.service;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.StringUtils;
-import org.myboosttest.purchaseorders.dto.ItemRequest;
-import org.myboosttest.purchaseorders.dto.ItemResponse;
+import org.myboosttest.purchaseorders.dto.request.ItemRequest;
+import org.myboosttest.purchaseorders.dto.response.ItemResponse;
 import org.myboosttest.purchaseorders.entity.Item;
 import org.myboosttest.purchaseorders.exception.ItemNotFoundException;
 import org.myboosttest.purchaseorders.repository.ItemRepository;
+import org.myboosttest.purchaseorders.service.mapper.ItemMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

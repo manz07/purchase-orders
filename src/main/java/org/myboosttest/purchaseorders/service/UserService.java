@@ -2,12 +2,13 @@ package org.myboosttest.purchaseorders.service;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.StringUtils;
-import org.myboosttest.purchaseorders.dto.UserRequest;
+import org.myboosttest.purchaseorders.dto.request.UserRequest;
 
-import org.myboosttest.purchaseorders.dto.UserResponse;
+import org.myboosttest.purchaseorders.dto.response.UserResponse;
 import org.myboosttest.purchaseorders.entity.Users;
 import org.myboosttest.purchaseorders.exception.UserNotFoundException;
 import org.myboosttest.purchaseorders.repository.UserRepository;
+import org.myboosttest.purchaseorders.service.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,8 +1,8 @@
-package org.myboosttest.purchaseorders.service;
+package org.myboosttest.purchaseorders.service.mapper;
 
 import lombok.RequiredArgsConstructor;
-import org.myboosttest.purchaseorders.dto.PODetailRequest;
-import org.myboosttest.purchaseorders.dto.PODetailResponse;
+import org.myboosttest.purchaseorders.dto.request.PODetailRequest;
+import org.myboosttest.purchaseorders.dto.response.PODetailResponse;
 import org.myboosttest.purchaseorders.entity.Item;
 import org.myboosttest.purchaseorders.entity.PODetail;
 import org.myboosttest.purchaseorders.entity.POHeader;
@@ -29,11 +29,11 @@ public class PODetailMapper {
     }
 
     public static PODetailResponse fromPODetail(PODetail poDetail) {
-            return new PODetailResponse(
-                    poDetail.getId(),
-                    poDetail.getItemQty(),
-                    poDetail.getItemCost(),
-                    poDetail.getItemPrice()
-            );
+        return new PODetailResponse(
+                poDetail.getId(),
+                poDetail.getItemQty(),
+                poDetail.getItemCost(),
+                poDetail.getItemPrice()
+        );
     }
 }

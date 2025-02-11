@@ -3,8 +3,8 @@ package org.myboosttest.purchaseorders.controller;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.myboosttest.purchaseorders.apiresponse.ApiResponse;
-import org.myboosttest.purchaseorders.dto.ItemRequest;
-import org.myboosttest.purchaseorders.dto.ItemResponse;
+import org.myboosttest.purchaseorders.dto.request.ItemRequest;
+import org.myboosttest.purchaseorders.dto.response.ItemResponse;
 import org.myboosttest.purchaseorders.service.ItemService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -41,11 +41,12 @@ public class ItemController {
     }
 
     @PutMapping
-    public ResponseEntity<Void> updateItem(
+    public ResponseEntity<ApiResponse> updateItem(
             @RequestBody @Valid ItemRequest itemRequest
     ) {
         itemService.updateItem(itemRequest);
-        return ResponseEntity.accepted().build();
+        ApiResponse apiResponse = new ApiResponse("success", "Item data successfully updated");
+        return new ResponseEntity<>(apiResponse, HttpStatus.ACCEPTED);
     }
 
     @DeleteMapping("/{item-id}")

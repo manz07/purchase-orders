@@ -1,4 +1,4 @@
-package org.myboosttest.purchaseorders.dto;
+package org.myboosttest.purchaseorders.dto.response;
 
 import lombok.Builder;
 

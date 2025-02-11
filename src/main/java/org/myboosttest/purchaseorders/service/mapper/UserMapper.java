@@ -1,7 +1,7 @@
-package org.myboosttest.purchaseorders.service;
+package org.myboosttest.purchaseorders.service.mapper;
 
-import org.myboosttest.purchaseorders.dto.UserRequest;
-import org.myboosttest.purchaseorders.dto.UserResponse;
+import org.myboosttest.purchaseorders.dto.request.UserRequest;
+import org.myboosttest.purchaseorders.dto.response.UserResponse;
 import org.myboosttest.purchaseorders.entity.Users;
 import org.springframework.stereotype.Service;
 

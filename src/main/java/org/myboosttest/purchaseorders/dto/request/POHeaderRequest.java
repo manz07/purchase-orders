@@ -1,7 +1,7 @@
-package org.myboosttest.purchaseorders.dto;
+package org.myboosttest.purchaseorders.dto.request;
 
 import lombok.Builder;
-import lombok.Data;
+import org.myboosttest.purchaseorders.dto.request.PODetailRequest;
 
 import java.time.LocalDateTime;
 import java.util.List;

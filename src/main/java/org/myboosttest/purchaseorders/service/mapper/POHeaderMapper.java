@@ -1,8 +1,8 @@
-package org.myboosttest.purchaseorders.service;
+package org.myboosttest.purchaseorders.service.mapper;
 
-import org.myboosttest.purchaseorders.dto.PODetailResponse;
-import org.myboosttest.purchaseorders.dto.POHeaderRequest;
-import org.myboosttest.purchaseorders.dto.POHeaderResponse;
+import org.myboosttest.purchaseorders.dto.response.PODetailResponse;
+import org.myboosttest.purchaseorders.dto.request.POHeaderRequest;
+import org.myboosttest.purchaseorders.dto.response.POHeaderResponse;
 import org.myboosttest.purchaseorders.entity.POHeader;
 import org.springframework.stereotype.Service;
 
